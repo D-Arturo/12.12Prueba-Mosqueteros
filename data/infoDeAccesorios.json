@@ -1,0 +1,24 @@
+[
+    {
+        "img-url":"img/barra_labios.png",
+        "img-alt":"imagen del producto bala vibradora",
+        "name":"Mona",
+        "price":24.99,
+        "stock":13
+    },
+    {
+        "img-url":"img/Nube-negro_grande.png",
+        "img-alt":"imagen del producto nube negra grande",
+        "name":"Nube negra",
+        "price":19.99,
+        "stock":6
+    },
+    {
+        "img-url":"img/satisfyer-masculino.png",
+        "img-alt":"imagen del producto satisfyer masculino",
+        "name":"Satisfyer Masculino",
+        "price":45.99,
+        "stock":9
+    }
+
+]

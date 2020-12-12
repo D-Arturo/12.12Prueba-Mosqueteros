@@ -6,6 +6,7 @@ const app = express();
 //para que la imprima en el #each que esta en navigation.hbs
 const navbar = require("./data/listaDeBotonesNav.json");
 const catLibros = require("./data/infoDeLibros.json");
+const catAccesorios = require("./data/infoDeAccesorios.json");
 
 //Declaramos los directorios de donde sacaremos nuestros parciales y layouts
 app.engine(
@@ -29,7 +30,8 @@ app.get("/", function (req, res) {
   res.render("catalogoTemplate", {
     layout: "catalogoLayout",
     listanav: navbar,
-    infoLibros: catLibros
+    infoLibros: catLibros,
+    infoAccesorios: catAccesorios
     
   });
 });
