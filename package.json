@@ -1,0 +1,27 @@
+{
+  "name": "ejercicio12.12",
+  "version": "1.0.0",
+  "description": "Conocimiento caido del cielo sin ningún esfuerzo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D-Arturo/12.12Prueba-Mosqueteros.git"
+  },
+  "author": "Grupo 6",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D-Arturo/12.12Prueba-Mosqueteros/issues"
+  },
+  "homepage": "https://github.com/D-Arturo/12.12Prueba-Mosqueteros#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

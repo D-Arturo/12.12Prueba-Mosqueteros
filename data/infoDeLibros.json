@@ -1,0 +1,24 @@
+[
+    {
+        "img-url":"img/libro_2.jpg",
+        "img-alt":"",
+        "title":"JavaScript para Dummies",
+        "price":12.50,
+        "stock":13
+    },
+    {
+        "img-url":"img/libro_3.jpg",
+        "img-alt":"",
+        "title":"Programar en 24h con Ed #InfiernoEnLaTierra",
+        "price":18.99,
+        "stock":6
+    },
+    {
+        "img-url":"img/libro_4.jpg",
+        "img-alt":"",
+        "title":"Comunicación no violenta, hijos de puta",
+        "price":22.25,
+        "stock":9
+    }
+
+]

@@ -1,0 +1,27 @@
+[
+    
+    {
+
+        "name":"Home",
+        "href":"/"
+
+    },
+    {
+
+        "name":"Agregar Libro",
+        "href":"/addLibro"
+
+    },
+    {
+
+        "name":"Agregar Accesorio",
+        "href":"/addAccesorio"
+
+    },
+    {
+
+        "name":"Salir",
+        "href":"/login"
+
+    }
+]
