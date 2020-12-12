@@ -1,22 +1,22 @@
 [
     {
         "img-url":"img/libro_2.jpg",
-        "img-alt":"",
-        "title":"JavaScript para Dummies",
+        "img-alt":"Imagen del libro Todo o nada",
+        "title":"Todo o nada",
         "price":12.50,
         "stock":13
     },
     {
         "img-url":"img/libro_3.jpg",
-        "img-alt":"",
-        "title":"Programar en 24h con Ed #InfiernoEnLaTierra",
+        "img-alt":"Imagen del libro Hazme disfrutar",
+        "title":"Hazme disfrutar",
         "price":18.99,
         "stock":6
     },
     {
         "img-url":"img/libro_4.jpg",
-        "img-alt":"",
-        "title":"Comunicación no violenta, hijos de puta",
+        "img-alt":"Imagen del libro El Contrato",
+        "title":"El contrato",
         "price":22.25,
         "stock":9
     }

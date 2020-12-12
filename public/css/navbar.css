@@ -1,21 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
+:root{
+    --fuente:'Langar', cursive;
+}
+
 nav{
     height: 8vh;
     background-color: slategray;
+    font-family:var(--fuente);
+    font-size: 1.35em;
+    letter-spacing: 0.1em;
 }
 nav ul{
     display: flex;
+    justify-content: space-around;
 }
 nav ul li{
     padding: 3vh;
 }
+nav ul li a{
+    color: white;
+}
 form{
     display: flex;
+    padding-top: 2vh;
 }
 input[type="search"]{
-    padding-right: 2vh;
+    margin-right: 2vh;
+    outline: none;
 }
 input[type="search"], input[type="submit"]{
     height: 4vh;
-    border-radius: 10%;
-    padding-top: 2vw;
+}
+nav li:hover{
+    background-color: white;
+}
+nav li:hover a{
+    color: slategray;
 }
