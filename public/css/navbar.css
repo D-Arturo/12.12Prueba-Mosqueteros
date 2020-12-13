@@ -9,7 +9,6 @@ nav{
     height: 8vh;
     background-color: slategray;
     font-family:var(--fuente);
-    font-size: 1.35em;
     letter-spacing: 0.1em;
 }
 nav ul{
@@ -21,12 +20,13 @@ nav ul li{
 }
 nav ul li a{
     color: white;
+    font-size: 1.35em;
 }
 nav img{
 
-    width:4vw;
+    width: 52px;
     border-radius: 100%;
-    margin-top: 1vh;
+    margin-top: 5px;
 
 }
 form{

@@ -1,12 +1,12 @@
 <nav>
     <ul>
-        {{>atoms/botonHome}}
+        {{>atoms/navbar/botonHome}}
         {{!-- Declaramos un helper listanav para hacer la lista dinamica y le inyectamos
                 un parcial botonNav por cada elemento del .json--}}
         {{#each listanav}}
-            <li>{{>atoms/botonNav}}</li>       
+            <li>{{>atoms/navbar/botonNav}}</li>       
         {{/each}}
         {{!-- Barra de busqueda con un pequeño formulario --}}
-        {{>atoms/barraBusqueda}}
+        {{>atoms/navbar/barraBusqueda}}
     </ul>
 </nav>
