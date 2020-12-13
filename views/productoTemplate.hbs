@@ -2,6 +2,8 @@
     {{>organisms/navigation}}
 </header>
 <main>
+    {{!-- Helper que nos deja decidir qué formulario mostrar en funcion del parametro
+            decision que recibe --}}
     {{#if decision}}
         {{>organisms/libroForm}}
     {{else}}

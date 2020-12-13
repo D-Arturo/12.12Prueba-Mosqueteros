@@ -5,6 +5,9 @@
     <input id="botonLogin" type="submit" value="Log In">
 
 </form>
+
+{{!-- Helper que inyecta un parcial de error si el parametro error que le mandamos
+        esta a true --}}
 {{#if error}}
     {{>atoms/login/error-form}}
 {{/if}}

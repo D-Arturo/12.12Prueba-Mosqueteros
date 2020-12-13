@@ -68,20 +68,24 @@ app.get('/catalogo', (req,res) =>{
   });
 
 });
-
+// Lanzamos un mensaje de error cuando los datos introducidos en el formulario de login
+// son erroneos, mandamos un parametro true para indicar que hay un error
 app.get('/error', (req,res) =>{
 
   res.render('loginTemplate',{
     layout:'loginLayout',
+    // Parametro que mandamos al helper que muestra el error si esta a true
     error:true
   });
 
 })
-
+// Renderizamos el productoTemplate con un parametro para saber que formulario mostrar,
+// el de libros o el de accesorios
 app.get('/addLibro', (req,res)=>{
 
   res.render('productoTemplate',{
     layout:'productoLayout',
+    // Parametro que indica que formulario mostrar, en este caso el de libros
     decision:true,
     listanav:navbar
   });
@@ -92,6 +96,7 @@ app.get('/addAccesorio', (req,res)=>{
 
   res.render('productoTemplate',{
     layout:'productoLayout',
+    // En este caso el de accesorios
     decision:false,
     listanav:navbar
   });
