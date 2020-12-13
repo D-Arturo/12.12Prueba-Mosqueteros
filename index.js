@@ -29,14 +29,14 @@ app.engine( 'hbs', exphbs({
 //Le especificamos al motor de vistas que interprete los .hbs como vistas(frontal)
 app.set('view engine', 'hbs');
 
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
   // Renderizamos especificando el template, en que layout queremos renderizar y
   // pasamos como parametro los .json que necesitemos 
   return res.render('loginTemplate',{layout:'loginLayout'});
   
 });
 // Controlador que administra el acceso a nuestro catalogo 
-app.post('/login',function(req,res){
+app.post('/login', (req,res) => {
   // Capturamos los campos que nos interesan del formulario por su NAME
   const user = req.body.user;
   const password= req.body.password;
@@ -52,12 +52,12 @@ app.post('/login',function(req,res){
     }
   }
   // Si no coinciden los mandamos otra vez a que rellenen el formulario
-  return res.redirect('/');
+  return res.redirect('/error');
 });
 
 
 // Renderizamos el catalogo con los parametros que necesitamos en cada bucle
-app.get('/catalogo',function(req,res){
+app.get('/catalogo', (req,res) =>{
 
   return res.render('catalogoTemplate', {
     layout: 'catalogoLayout',
@@ -68,6 +68,12 @@ app.get('/catalogo',function(req,res){
   });
 
 });
+
+app.get('/error', (req,res) =>{
+
+  res.render('loginTemplate',{layout:'loginLayout',error:true});
+
+})
 
 // Usamos esta directiva para decirle que todo el contenido de esa carpeta es estatico y podemos
 // hacer una ruta a ese contenido de manera normal
