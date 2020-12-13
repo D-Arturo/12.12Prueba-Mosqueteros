@@ -2,5 +2,9 @@
     {{>organisms/navigation}}
 </header>
 <main>
-    {{>organisms/libroForm}}
+    {{#if decision}}
+        {{>organisms/libroForm}}
+    {{else}}
+        {{>organisms/accesorioForm}}
+    {{/if}}
 </main>

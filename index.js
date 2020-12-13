@@ -71,7 +71,30 @@ app.get('/catalogo', (req,res) =>{
 
 app.get('/error', (req,res) =>{
 
-  res.render('loginTemplate',{layout:'loginLayout',error:true});
+  res.render('loginTemplate',{
+    layout:'loginLayout',
+    error:true
+  });
+
+})
+
+app.get('/addLibro', (req,res)=>{
+
+  res.render('productoTemplate',{
+    layout:'productoLayout',
+    decision:true,
+    listanav:navbar
+  });
+
+})
+
+app.get('/addAccesorio', (req,res)=>{
+
+  res.render('productoTemplate',{
+    layout:'productoLayout',
+    decision:false,
+    listanav:navbar
+  });
 
 })
 
