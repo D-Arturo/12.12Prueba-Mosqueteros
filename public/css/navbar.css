@@ -3,11 +3,11 @@
 
 :root{
     --fuente:'Langar', cursive;
+    --back-color: rgb(176, 181, 187);
 }
-
 nav{
     height: 8vh;
-    background-color: slategray;
+    background-color: var(--back-color);
     font-family:var(--fuente);
     letter-spacing: 0.1em;
 }
@@ -44,5 +44,5 @@ nav li:hover{
     background-color: white;
 }
 nav li:hover a{
-    color: slategray;
+    color: var(--back-color);
 }
